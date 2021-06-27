@@ -1,3 +1,16 @@
+:root {
+  --primary-text-color: #212121;
+  --title-text-color: #ffffff;
+  --accent-color: #2196f3;
+  --secondary-text-color: #757575;
+}
+
+body {
+  color: #000000;
+  font-family: Roboto, sans-serif;
+  font-weight: normal;
+}
+
 .list {
   list-style: none;
 }
@@ -15,27 +28,26 @@
   color: #000000;
 }
 .logo-blue {
-  font-family: Raleway;
+  font-family: Raleway, sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 26px;
   line-height: 1.2;
   letter-spacing: 0.03em;
-  color: #2196f3;
+  color: var(--accent-color);
 }
 
 .menu-item {
-  font-family: Roboto, sans-serif;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: #212121;
+  color: var(--primary-text-color);
 }
 
 .menu-item :hover,
 .menu-item :focus {
-  color: #2196f3;
+  color: var(--accent-color);
 }
 
 .menu .menu-item .current {
@@ -43,33 +55,30 @@
 }
 
 .header-contacts {
-  font-family: Roboto, sans-serif;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: #757575;
+  color: var(--secondary-text-color);
 }
 
 .header-contacts:hover,
 .header-contacts:focus {
-  color: #2196f3;
+  color: var(--accent-color);
 }
 
 .main-title {
-  font-family: Roboto, sans-serif;
   font-weight: 900;
   font-size: 44px;
   line-height: 13.6;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: #ffffff;
+  color: var(--title-text-color);
   background-color: #2f303a;
 }
 
 .main-title-button {
-  font-family: Roboto, sans-serif;
   font-weight: bold;
   font-size: 16px;
   line-height: 1.9;
@@ -78,60 +87,53 @@
   text-align: center;
   letter-spacing: 0.06em;
   cursor: pointer;
-  color: #ffffff;
-  background-color: #2196f3;
+  color: var(--title-text-color);
+  background-color: var(--accent-color);
 }
 
 .main-title-button:hover,
 .main-title-button:focus {
   background-color: #188ce8;
-  color: #ffffff;
+  color: var(--title-text-color);
 }
 
 .subtitle-list {
-  font-family: Roboto, sans-serif;
   font-weight: bold;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #212121;
+  color: var(--primary-text-color);
 }
 .subt-list-text {
-  font-family: Roboto, sans-serif;
-  font-weight: normal;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: #757575;
+  color: var(--secondary-text-color);
 }
 .benefits,
 .title-team {
-  font-family: Roboto, sans-serif;
   font-weight: bold;
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
-  color: #212121;
+  color: var(--primary-text-color);
 }
 .subt-team-name {
-  font-family: Roboto, sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.87;
   text-align: center;
   letter-spacing: 0.03em;
-  color: #212121;
+  color: var(--primary-text-color);
 }
 .team-profession {
-  font-family: Roboto, sans-serif;
-  font-weight: normal;
   font-size: 16px;
   line-height: 1.87;
   text-align: center;
   letter-spacing: 0.03em;
-  color: #757575;
+  color: var(--secondary-text-color);
 }
 .footer {
   background-color: #2f303a;
@@ -142,23 +144,17 @@
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-  color: #ffffff;
+  color: var(--title-text-color);
 }
 
 .footer-adress {
-  font-family: Roboto, sans-serif;
-  font-style: normal;
-  font-weight: normal;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: #ffffff;
+  color: var(--title-text-color);
 }
 
 .footer-contacts {
-  font-family: Roboto, sans-serif;
-  font-style: normal;
-  font-weight: normal;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -166,36 +162,29 @@
 }
 /*======Cтили для портфолио=====*/
 .portfolio-button {
-  font-family: Roboto, sans-serif;
-  font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
   text-align: center;
   letter-spacing: 0.03em;
-  color: #212121;
+  color: var(--primary-text-color);
 }
 .portfolio-button:hover,
 .portfolio-button:focus {
-  color: #ffffff;
-  background-color: #2196f3;
+  color: var(--title-text-color);
+  background-color: var(--accent-color);
 }
 
 .portfolio-header {
-  font-family: Roboto;
-  font-style: normal;
   font-weight: bold;
   font-size: 18px;
   line-height: 2.25;
   letter-spacing: 0.06em;
-  color: #212121;
+  color: var(--primary-text-color);
 }
 .portfolio-text {
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
-  color: #757575;
+  color: var(--secondary-text-color);
 }
